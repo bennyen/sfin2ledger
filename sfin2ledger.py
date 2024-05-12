@@ -19,7 +19,7 @@ def simplefin2Ledger(intext):
         posted = datetime.fromtimestamp(trans['posted']).strftime('%Y/%m/%d')
         lines.append('{0} {1}'.format(posted, trans['description']))
         amount = Decimal(trans['amount'])
-        approx_width = 40
+        approx_width = 120
 
         if amount > 0:
             # income
